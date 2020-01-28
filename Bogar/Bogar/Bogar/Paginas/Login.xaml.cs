@@ -100,5 +100,11 @@ namespace Bogar
             }
             return received;
         }
+
+        private void btnRecovery_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new Recuperar());
+
+        }
     }
 }

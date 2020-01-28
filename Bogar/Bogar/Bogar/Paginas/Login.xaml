@@ -29,7 +29,7 @@
                     <Entry BackgroundColor="#F7F8F9" x:Name="entry2"></Entry>
                 </Frame>
 
-                <Button x:Name="btnRecovery" Text="¿Olvidaste tu contraseña?" TextColor="#DD463C" BackgroundColor="Transparent" FontSize="12" Margin="0,-25,0,0"></Button>
+                <Button x:Name="btnRecovery" Clicked="btnRecovery_Clicked" Text="¿Olvidaste tu contraseña?" TextColor="#DD463C" BackgroundColor="Transparent" FontSize="12" Margin="0,-25,0,0"></Button>
                 <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Inicia sesión" TextColor="#FFF" HorizontalOptions="FillAndExpand" Clicked="OnLoginClicked"></Button>
             </StackLayout>
         </StackLayout>

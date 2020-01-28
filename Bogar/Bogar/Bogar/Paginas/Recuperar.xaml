@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bogar.Recuperar">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="40" Spacing="10">
+                <Label Text="¿Olvidaste tu contraseña?" Font="Bold, 22" HorizontalOptions="CenterAndExpand" TextColor="#DD463C"></Label>
+
+                <Label Text="Usuario" Font="Bold, 18"></Label>
+                <Frame CornerRadius="15" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                    <Entry BackgroundColor="#F7F8F9"></Entry>
+                </Frame>
+
+                <Label Text="Confirmar usuario" Font="Bold, 18"></Label>
+                <Frame CornerRadius="15" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                    <Entry BackgroundColor="#F7F8F9"></Entry>
+                </Frame>
+
+                <Label Text="En unos momentos recibiras un email de recuperación..." Margin="0, -20, 0, 0" HorizontalTextAlignment="Center" Font="Normal, 12" TextColor="#DD463C" BackgroundColor="Transparent"></Label>
+                <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Margin="0, 0, 0, 0" Text="Recuperar" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
