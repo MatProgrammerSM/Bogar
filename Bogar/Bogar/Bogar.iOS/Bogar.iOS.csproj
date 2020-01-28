@@ -125,11 +125,14 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xam.Plugins.Settings">
+      <Version>3.1.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\Bogar\Bogar.csproj">
-      <Project>{526A7BB9-7A8C-4205-97B5-F47CF3BF90DC}</Project>
+      <Project>{2EA3F967-0730-444A-896E-D6E078348637}</Project>
       <Name>Bogar</Name>
     </ProjectReference>
   </ItemGroup>
