@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bogar.NuevoDesarrollo">
+
+    <NavigationPage.TitleView>
+        <Label Text="Nuevo Desarrollo" Font="Bold, 18" TextColor="#FFF" HorizontalTextAlignment="Center"></Label>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Aspect="AspectFill" BackgroundColor="#FFF" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout HorizontalOptions="Fill" BackgroundColor="#FFF" Padding="40, 30, 40, 80" Spacing="10">
+
+                    <Label Text="Nombre de desarrollo" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Estado" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Picker SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Elige un estado</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Frame>
+
+                    <Label Text="Ciudad" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Picker SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Elige una ciudad</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Frame>
+
+                    <Label Text="Domicilio" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Código postal" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Entre calle" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Calle 1" BackgroundColor="#F7F8F9"></Entry>
+                    </Frame>
+                    <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Calle 2" BackgroundColor="#F7F8F9"></Entry>
+                    </Frame>
+
+                    <Label Text="Nombre de desarrolladora" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Nombre de asesor" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Contacto de asesor" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Liga página web" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Liga página de Facebook" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Label Text="Liga de Instagram" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry></Entry>
+                    </Frame>
+
+                    <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Genera desarrollo" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

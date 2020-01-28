@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bogar.MainPage">
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="fondoa" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" />
+
+            <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Padding="20, 150, 20, 100" BackgroundColor="#AADD463C">
+
+                <Image Source="group" WidthRequest="320" HeightRequest="150" IsVisible="True" Margin="30, 60, 30, 20"></Image>
+
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="5, 5, 5, 5" Spacing="10">
+                    <Button x:Name="btnRegister" Text="Regístrate" Clicked="btnRegister_Clicked" BackgroundColor="Transparent" BorderWidth="2" BorderColor="#FFF" TextColor="#FFF" Font="Bold, 16" CornerRadius="10"  Margin="0, 0, 0, 10"></Button>
+                    <Button x:Name="btnLogin" Text="Inicia sesión" Clicked="btnLogin_Clicked" BackgroundColor="#FFF" TextColor="#DD463C" Font="Bold, 16" CornerRadius="10"></Button>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

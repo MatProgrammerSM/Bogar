@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bogar.Perfil"
+             NavigationPage.HasNavigationBar="false">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout HeightRequest="300">
+                <Image Source="fondofigure" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+
+                <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="30">
+                    <Image Source="logoout" WidthRequest="200" Margin="0, 20, 0, 0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
+                    <Frame BackgroundColor="#FFF" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="100" CornerRadius="100" HasShadow="True">
+                        <Image Source="fondoa.png" HorizontalOptions="Fill" Aspect="AspectFill"></Image>
+                    </Frame>
+                </StackLayout>
+            </AbsoluteLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="30" Spacing="10">
+                <Label Text="Héctor Robles" Font="Bold, 22" HorizontalOptions="CenterAndExpand" TextColor="#DD463C"></Label>
+
+                <Grid Margin="0, 20, 0, 0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Frame HasShadow="True" HeightRequest="200" Grid.Column="0" Margin="10">
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Image Source="inicioco" HorizontalOptions="CenterAndExpand"></Image>
+                            <Label Text="Nuevo desarrollo" Font="Bold, 22" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HasShadow="True" HeightRequest="200" Grid.Column="1" Margin="10">
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Image Source="refresh" HorizontalOptions="CenterAndExpand"></Image>
+                            <Label Text="Actualización de desarrollo" Font="Bold, 22" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>
+                        </StackLayout>
+                    </Frame>
+                </Grid>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

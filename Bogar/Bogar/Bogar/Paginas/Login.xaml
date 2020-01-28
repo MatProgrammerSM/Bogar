@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bogar.Login"
+             NavigationPage.HasNavigationBar="false">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout HeightRequest="300">
+                <Image Source="fondofigure" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+
+                <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="30">
+                    <Image Source="group" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
+                </StackLayout>
+            </AbsoluteLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="30" Spacing="10">
+                <Label Text="Inicio de sesión" Font="Bold, 22" HorizontalOptions="CenterAndExpand" TextColor="#DD463C"></Label>
+
+                <Label Text="Usuario" Font="Bold, 18"></Label>
+                <Frame CornerRadius="15" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                    <Entry BackgroundColor="#F7F8F9"></Entry>
+                </Frame>
+
+                <Label Text="Contraseña" Font="Bold, 18"></Label>
+                <Frame CornerRadius="15" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                    <Entry BackgroundColor="#F7F8F9"></Entry>
+                </Frame>
+
+                <Button x:Name="btnRecovery" Text="¿Olvidaste tu contraseña?" TextColor="#DD463C" BackgroundColor="Transparent" FontSize="12" Margin="0,-25,0,0"></Button>
+                <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Inicia sesión" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

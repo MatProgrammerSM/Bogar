@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bogar.Registro"
+             xmlns:local="clr-namespace:Bogar.Controls"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Aspect="AspectFill" BackgroundColor="#FFF" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout HorizontalOptions="Fill" BackgroundColor="#FFF" Padding="40, 30, 40, 80" Spacing="10">
+                    <Label Text="Regístrate" Font="Bold, 22" HorizontalOptions="CenterAndExpand" TextColor="#DD463C"></Label>
+
+                    <Label Text="Nombre Completo" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Ingrese su Nombre"></Entry>
+                    </Frame>
+                    <Label Text="Fecha de Nacimiento" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <DatePicker></DatePicker>
+                    </Frame>
+                                        
+                    <Label Text="Domicilio" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Ingrese su domicilio"></Entry>
+                    </Frame>
+                    
+                    <Label Text="Colonia" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Ingrese su colonia" BackgroundColor="#F7F8F9"></Entry>
+                    </Frame>
+
+                    <Label Text="Código postal" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Ingrese su código postal" Keyboard="Numeric" BackgroundColor="#F7F8F9"></Entry>
+                    </Frame>
+                    
+                    <Label Text="Entre calles" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Calle 1" BackgroundColor="#F7F8F9"></Entry>
+                    </Frame>
+                    <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Calle 2" BackgroundColor="#F7F8F9"></Entry>
+                    </Frame>
+
+                    <Label Text="Foto de INE (por ambos lados)" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="5, 10, 5, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9">
+                        <local:ImageEntry TextColor="Black" ImageHeight="7" HeightRequest="35" ImageWidth="9" PlaceholderColor="#ccc" Image="camera" ImageAlignment="Right" Placeholder="" BackgroundColor="#F7F8F9" HorizontalOptions="FillAndExpand" />
+                    </Frame>
+                    
+                    <Label Text="Comprobante de domicilio" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="5, 10, 5, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9">
+                        <local:ImageEntry TextColor="Black" ImageHeight="7" HeightRequest="35" ImageWidth="9" PlaceholderColor="#ccc" Image="camera" ImageAlignment="Right" Placeholder="No mayor a 3 meses de antiguedad" BackgroundColor="#F7F8F9" HorizontalOptions="FillAndExpand" />
+                    </Frame>
+
+                    <Label Text="Número de hijos" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Picker SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Elige un número</x:String>
+                                <x:String>Ninguno</x:String>
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                                <x:String>3</x:String>
+                                <x:String>4</x:String>
+                                <x:String>5+</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Frame>
+
+                    <Label Text="Número de dependientes ecónomicos" Font="Bold, 18"></Label>
+                    <Frame CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Picker SelectedIndex="0" HorizontalOptions="FillAndExpand">
+                            <Picker.Items>
+                                <x:String>Elige un número</x:String>
+                                <x:String>Ninguno</x:String>
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                                <x:String>3</x:String>
+                                <x:String>4</x:String>
+                                <x:String>5+</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </Frame>
+                    <StackLayout Orientation="Vertical" Spacing="15" Margin="20">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <Button BackgroundColor="#F7F8F9" BorderColor="#F7F8F9" Text="Medio Tiempo" TextColor="#979797" HorizontalOptions="StartAndExpand" ></Button>
+                            <Button BackgroundColor="#F7F8F9" BorderColor="#F7F8F9" Text="Tiempo Completo" TextColor="#979797" HorizontalOptions="EndAndExpand"></Button>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Continuar" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
