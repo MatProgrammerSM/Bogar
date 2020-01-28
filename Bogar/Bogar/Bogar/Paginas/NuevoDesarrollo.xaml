@@ -7,7 +7,7 @@
              x:Class="Bogar.NuevoDesarrollo">
 
     <NavigationPage.TitleView>
-        <Label Text="Nuevo Desarrollo" Font="Bold, 18" TextColor="#FFF" HorizontalTextAlignment="Center"></Label>
+        <Label Text="Nuevo Desarrollo" Font="Bold, 18" TextColor="#FFF"></Label>
     </NavigationPage.TitleView>
 
     <ContentPage.Content>

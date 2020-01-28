@@ -6,16 +6,16 @@
              mc:Ignorable="d"
              x:Class="Bogar.Perfil"
              NavigationPage.HasNavigationBar="false">
-    
+
     <ContentPage.Content>
         <StackLayout>
             <AbsoluteLayout HeightRequest="300">
-                <Image Source="fondofigure" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+                <Image Source="fondofigure" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
 
                 <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="30">
                     <Image Source="logoout" WidthRequest="200" Margin="0, 20, 0, 0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
                     <Frame BackgroundColor="#FFF" BorderColor="#FFF" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="100" CornerRadius="100" HasShadow="True">
-                        <Image Source="fondoa.png" HorizontalOptions="Fill" Aspect="AspectFill"></Image>
+                        <Image Source="imageperfil" Aspect="AspectFit" Margin="-80, -45, -80, -80" AbsoluteLayout.LayoutFlags="WidthProportional" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
                     </Frame>
                 </StackLayout>
             </AbsoluteLayout>
@@ -32,10 +32,10 @@
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="NuevoDesarrollo"/>
                         </Frame.GestureRecognizers>
-                        
+
                         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                             <Image Source="inicioco" HorizontalOptions="CenterAndExpand"></Image>
-                            <Label Text="Nuevo desarrollo" Font="Bold, 22" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>
+                            <Label Text="Nuevo desarrollo" Font="Bold, 18" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>
                         </StackLayout>
                     </Frame>
 
@@ -43,10 +43,13 @@
                         <Frame.GestureRecognizers>
                             <TapGestureRecognizer Tapped="ActualizarDesarrollo"/>
                         </Frame.GestureRecognizers>
-                        
+
                         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                            <Image Source="refresh" HorizontalOptions="CenterAndExpand"></Image>
-                            <Label Text="Actualización de desarrollo" Font="Bold, 22" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>
+                            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                <Image Source="refresh" Margin="0, 10, 0, 0" HorizontalOptions="CenterAndExpand"></Image>
+                                <Image Source="inicioco" WidthRequest="50" Margin="-80" HorizontalOptions="CenterAndExpand"></Image>
+                            </StackLayout>
+                            <Label Text="Actualización de desarrollo" Margin="0, 100, 0, 10" Font="Bold, 18" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>
                         </StackLayout>
                     </Frame>
                 </Grid>
