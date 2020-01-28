@@ -16,5 +16,10 @@ namespace Bogar
         {
             InitializeComponent();
         }
+
+        public void Cambiotamano(object sender, EventArgs e)
+        {
+            Settings.Ancho = stack1.Width.ToString();
+        }
     }
 }

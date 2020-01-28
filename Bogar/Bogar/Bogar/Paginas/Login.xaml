@@ -12,7 +12,7 @@
             <AbsoluteLayout HeightRequest="300">
                 <Image Source="fondofigure" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="1, 1, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
 
-                <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="30">
+                <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="30" x:Name="stack1">
                     <Image Source="Group.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
                 </StackLayout>
             </AbsoluteLayout>
