@@ -16,18 +16,41 @@
 
                     <Label Text="Nombre Completo" Font="Bold, 18"></Label>
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
-                        <Entry Placeholder="Ingrese su Nombre"></Entry>
+                        <Entry Placeholder="Ingrese su Nombre" x:Name="e_nombre"></Entry>
                     </Frame>
-                    <Label Text="Fecha de Nacimiento" Font="Bold, 18"></Label>
+
+                    <Label Text="Correo" Font="Bold, 18"></Label>
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
-                        <DatePicker></DatePicker>
+                        <Entry Placeholder="Ingrese su Correo" x:Name="e_correo"></Entry>
                     </Frame>
-                                        
+
+                    <Label Text="Edad" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Entry Placeholder="Ingrese su Edad" x:Name="e_edad"></Entry>
+                    </Frame>
+
+                    <Label Text="Estado civil" Font="Bold, 18"></Label>
+                    <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
+                        <Picker x:Name="p_estadocivil" Title="Selecciona tu estado civil">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>SOLTERO/A</x:String>
+                                    <x:String>COMPROMETIDO/A</x:String>
+                                    <x:String>CASADO/A</x:String>
+                                    <x:String>SEPARADO/A</x:String>
+                                    <x:String>DIVORCIADO/A</x:String>
+                                    <x:String>VIUDO/A</x:String>
+                                    <x:String>Japanese Macaque</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </Frame>
+
                     <Label Text="Domicilio" Font="Bold, 18"></Label>
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
                         <Entry Placeholder="Ingrese su domicilio"></Entry>
                     </Frame>
-                    
+
                     <Label Text="Colonia" Font="Bold, 18"></Label>
                     <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
                         <Entry Placeholder="Ingrese su colonia" BackgroundColor="#F7F8F9"></Entry>
@@ -37,7 +60,7 @@
                     <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
                         <Entry Placeholder="Ingrese su código postal" Keyboard="Numeric" BackgroundColor="#F7F8F9"></Entry>
                     </Frame>
-                    
+
                     <Label Text="Entre calles" Font="Bold, 18"></Label>
                     <Frame CornerRadius="5" BorderColor="#F7F8F9" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
                         <Entry Placeholder="Calle 1" BackgroundColor="#F7F8F9"></Entry>
@@ -50,7 +73,7 @@
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="5, 10, 5, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9">
                         <local:ImageEntry TextColor="Black" ImageHeight="7" HeightRequest="35" ImageWidth="9" PlaceholderColor="#ccc" Image="camera" ImageAlignment="Right" Placeholder="" BackgroundColor="#F7F8F9" HorizontalOptions="FillAndExpand" />
                     </Frame>
-                    
+
                     <Label Text="Comprobante de domicilio" Font="Bold, 18"></Label>
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="5, 10, 5, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9">
                         <local:ImageEntry TextColor="Black" ImageHeight="7" HeightRequest="35" ImageWidth="9" PlaceholderColor="#ccc" Image="camera" ImageAlignment="Right" Placeholder="No mayor a 3 meses de antiguedad" BackgroundColor="#F7F8F9" HorizontalOptions="FillAndExpand" />
