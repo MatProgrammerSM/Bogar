@@ -10,7 +10,9 @@ namespace Bogar
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new NuevoDesarrollo()) { BarBackgroundColor = Color.FromHex("DD463C") };
+            MainPage = new NavigationPage(new Perfil());
+
+            //{ BarBackgroundColor = Color.FromHex("DD463C") }
         }
 
         protected override void OnStart()

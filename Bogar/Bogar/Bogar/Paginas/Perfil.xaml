@@ -14,7 +14,7 @@
 
                 <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="30">
                     <Image Source="logoout" WidthRequest="200" Margin="0, 20, 0, 0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Image>
-                    <Frame BackgroundColor="#FFF" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="100" CornerRadius="100" HasShadow="True">
+                    <Frame BackgroundColor="#FFF" BorderColor="#FFF" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" WidthRequest="100" HeightRequest="100" CornerRadius="100" HasShadow="True">
                         <Image Source="fondoa.png" HorizontalOptions="Fill" Aspect="AspectFill"></Image>
                     </Frame>
                 </StackLayout>
@@ -28,14 +28,22 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
 
-                    <Frame HasShadow="True" HeightRequest="200" Grid.Column="0" Margin="10">
+                    <Frame HasShadow="True" HeightRequest="200" CornerRadius="15" Grid.Column="0" Margin="10">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="NuevoDesarrollo"/>
+                        </Frame.GestureRecognizers>
+                        
                         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                             <Image Source="inicioco" HorizontalOptions="CenterAndExpand"></Image>
                             <Label Text="Nuevo desarrollo" Font="Bold, 22" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>
                         </StackLayout>
                     </Frame>
 
-                    <Frame HasShadow="True" HeightRequest="200" Grid.Column="1" Margin="10">
+                    <Frame HasShadow="True" HeightRequest="200" CornerRadius="15" Grid.Column="1" Margin="10">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="ActualizarDesarrollo"/>
+                        </Frame.GestureRecognizers>
+                        
                         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                             <Image Source="refresh" HorizontalOptions="CenterAndExpand"></Image>
                             <Label Text="Actualización de desarrollo" Font="Bold, 22" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" TextColor="#B6B3B3"></Label>

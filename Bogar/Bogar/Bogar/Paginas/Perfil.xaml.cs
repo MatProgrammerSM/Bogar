@@ -16,5 +16,15 @@ namespace Bogar
         {
             InitializeComponent();
         }
+
+        void NuevoDesarrollo(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new NuevoDesarrollo());
+        }
+
+        private void ActualizarDesarrollo(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new NuevoDesarrollo());
+        }
     }
 }
