@@ -10,7 +10,15 @@ namespace Bogar
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Perfil());
+            if(Settings.Idusuario == "")
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new Perfil());
+            }
+            
 
             //{ BarBackgroundColor = Color.FromHex("DD463C") }
         }
