@@ -26,5 +26,15 @@ namespace Bogar
         {
             ((NavigationPage)this.Parent).PushAsync(new NuevoDesarrollo());
         }
+
+        private void BtnNotificacion_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new Notificaciones());
+        }
+
+        private void BtnConfiguracion_Clicked(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new Configuracion());
+        }
     }
 }
