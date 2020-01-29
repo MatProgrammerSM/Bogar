@@ -15,6 +15,7 @@ namespace Bogar
         public Perfil()
         {
             InitializeComponent();
+            absolutelayout.Children.Add(cargar_menu_inferior());
         }
 
         public static AbsoluteLayout cargar_menu_inferior()
@@ -37,8 +38,10 @@ namespace Bogar
                 menu.Children.Add(icono_nuevo);
                 icono_nuevo.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(() => { try { Application.Current.MainPage.Navigation.PushAsync(new Perfil()); } catch (Exception ex) { Application.Current.MainPage.DisplayAlert("Ayuda", ex.Message, "OK"); } }), NumberOfTapsRequired = 1 });
 
-                var icono_estadisticas = new Image() { HorizontalOptions = LayoutOptions.CenterAndExpand, VerticalOptions = LayoutOptions.Center, Source = ImageSource.FromFile("plus.png"), HeightRequest = 30 };
-                menu.Children.Add(icono_estadisticas);
+                
+                var icono_estadisticas = new Image() { HorizontalOptions = LayoutOptions.CenterAndExpand, VerticalOptions = LayoutOptions.CenterAndExpand, Source = ImageSource.FromFile("plus.png"), HeightRequest = 22 };
+                Frame circulo = new Frame() {Padding = new Thickness(3), CornerRadius = 30, WidthRequest = 30, HeightRequest = 30, BackgroundColor = Color.FromHex("#DD463C"), Content = icono_estadisticas };
+                menu.Children.Add(circulo);
                 icono_estadisticas.GestureRecognizers.Add(new TapGestureRecognizer { Command = new Command(() => { try { Application.Current.MainPage.Navigation.PushAsync(new NuevoDesarrollo()); } catch (Exception ex) { Application.Current.MainPage.DisplayAlert("Ayuda", ex.Message, "OK"); } }), NumberOfTapsRequired = 1 });
 
                 var icono_menu = new Image() { HorizontalOptions = LayoutOptions.CenterAndExpand, VerticalOptions = LayoutOptions.Center, Source = ImageSource.FromFile("menu.png"), HeightRequest = 30 };

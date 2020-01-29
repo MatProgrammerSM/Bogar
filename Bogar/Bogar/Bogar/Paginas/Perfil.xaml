@@ -9,7 +9,7 @@
              NavigationPage.HasNavigationBar="false">
 
     <ContentPage.Content>
-        <AbsoluteLayout>
+        <AbsoluteLayout x:Name="absolutelayout">
             <Image Source="fondofigure.png" Aspect="Fill" AbsoluteLayout.LayoutBounds="0, 0, 1, 0.3" AbsoluteLayout.LayoutFlags="All" />
             <StackLayout HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Margin="15,5">
