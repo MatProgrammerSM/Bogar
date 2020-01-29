@@ -23,20 +23,26 @@
 
                     <Label Text="Estado" Font="Bold, 18"></Label>
                     <Frame CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
-                        <Picker SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
-                            <Picker.Items>
-                                <x:String>Elige un estado</x:String>
-                            </Picker.Items>
-                        </Picker>
+                        <Grid>
+                            <Picker SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+                                <Picker.Items>
+                                    <x:String>Elige un estado</x:String>
+                                </Picker.Items>
+                            </Picker>
+                            <Image Source="arrowbottom" HorizontalOptions="End" Margin="5, 5, 5, 5"/>
+                        </Grid>
                     </Frame>
 
                     <Label Text="Ciudad" Font="Bold, 18"></Label>
                     <Frame CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
-                        <Picker SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
-                            <Picker.Items>
-                                <x:String>Elige una ciudad</x:String>
-                            </Picker.Items>
-                        </Picker>
+                        <Grid>
+                            <Picker SelectedIndex="{Binding Industry}" HorizontalOptions="FillAndExpand">
+                                <Picker.Items>
+                                    <x:String>Elige una ciudad</x:String>
+                                </Picker.Items>
+                            </Picker>
+                            <Image Source="arrowbottom" HorizontalOptions="End" Margin="5, 5, 5, 5"/>
+                        </Grid>
                     </Frame>
 
                     <Label Text="Domicilio" Font="Bold, 18"></Label>
@@ -87,7 +93,7 @@
                         <Entry></Entry>
                     </Frame>
 
-                    <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Generar desarrollo" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+                    <Button x:Name="BtnNuevoDesarrollo" BackgroundColor="#DD463C" Clicked="BtnNuevoDesarrollo_Clicked" CornerRadius="10" BorderColor="#FFF" Text="Generar desarrollo" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
                 </StackLayout>
             </ScrollView>
         </AbsoluteLayout>
