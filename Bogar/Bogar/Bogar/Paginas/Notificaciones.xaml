@@ -5,11 +5,31 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Bogar.Notificaciones">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout BackgroundColor="#FFF">
+            <StackLayout HorizontalOptions="FillAndExpand" Margin="40, 40, 40, 40" Spacing="10" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Notificaciones recientes" Font="Bold, 18" TextColor="#55DD463C"></Label>
+
+                <StackLayout Orientation="Vertical" Spacing="15">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#12C3C3C3" Padding="15">
+                        
+<Image BackgroundColor="#FFF" Source="logo" Rotation="180" WidthRequest="15" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="Lorem Ipsum has been the industry's." TextColor="#979797" Font="Normal, 18" HorizontalOptions="CenterAndExpand"></Label>
+                        <Label Text="12:02" TextColor="#979797" Font="Normal, 12" HorizontalOptions="EndAndExpand"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#12C3C3C3" Padding="15">
+                        <Image BackgroundColor="#FFF" Source="logo" Rotation="180" WidthRequest="15" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="Lorem Ipsum has been the industry's." TextColor="#979797" Font="Normal, 18" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="12:02" TextColor="#979797" Font="Normal, 12" HorizontalOptions="EndAndExpand"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#12C3C3C3" Padding="15">
+                        <Image BackgroundColor="#FFF" Source="logo" Rotation="180" WidthRequest="15" HorizontalOptions="StartAndExpand"></Image>
+                        <Label Text="Lorem Ipsum has been the industry's." TextColor="#979797" Font="Normal, 18" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="12:02" TextColor="#979797" Font="Normal, 12" HorizontalOptions="EndAndExpand"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

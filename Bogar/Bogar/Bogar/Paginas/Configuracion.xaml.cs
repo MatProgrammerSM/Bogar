@@ -16,5 +16,10 @@ namespace Bogar
         {
             InitializeComponent();
         }
+
+        private void BtnLogout(object sender, EventArgs e)
+        {
+            ((NavigationPage)this.Parent).PushAsync(new MainPage());
+        }
     }
 }

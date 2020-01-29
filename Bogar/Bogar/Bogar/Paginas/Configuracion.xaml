@@ -5,11 +5,21 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Bogar.Configuracion">
+
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout BackgroundColor="#FFF">
+            <StackLayout HorizontalOptions="FillAndExpand" Margin="40, 50, 40, 50" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout Orientation="Vertical" Spacing="15">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#12C3C3C3" Padding="15" VerticalOptions="FillAndExpand">
+                        <StackLayout.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="BtnLogout" NumberOfTapsRequired="1"/>
+                        </StackLayout.GestureRecognizers>
+                        
+                        <Label Text="Cerrar sesión" TextColor="#979797" Font="Bold, 18" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"></Label>
+                        <Image Source="logo" WidthRequest="20" Rotation="270"></Image>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
