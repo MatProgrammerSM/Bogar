@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using ImageCircle.Forms.Plugin.Droid;
 
 namespace Bogar.Droid
 {
@@ -19,7 +20,7 @@ namespace Bogar.Droid
             Rg.Plugins.Popup.Popup.Init(this, savedInstanceState);
 
             base.OnCreate(savedInstanceState);
-
+            ImageCircleRenderer.Init();
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

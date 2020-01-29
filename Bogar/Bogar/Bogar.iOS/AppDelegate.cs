@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using ImageCircle.Forms.Plugin.iOS;
 using UIKit;
 
 namespace Bogar.iOS
@@ -24,6 +25,7 @@ namespace Bogar.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
+            ImageCircleRenderer.Init();
             Rg.Plugins.Popup.Popup.Init();
             return base.FinishedLaunching(app, options);
         }
