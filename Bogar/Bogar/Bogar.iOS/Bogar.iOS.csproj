@@ -193,4 +193,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\arrowbottom.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\notificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\settings.png" />
+  </ItemGroup>
 </Project>

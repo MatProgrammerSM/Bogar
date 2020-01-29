@@ -4,12 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Bogar.Perfil"
-             NavigationPage.HasNavigationBar="false">
+             x:Class="Bogar.Perfil">
 
     <ContentPage.Content>
         <StackLayout>
             <AbsoluteLayout HeightRequest="300">
+                <Image Source="" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+                <Image Source="fondofigure" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
+
                 <Image Source="fondofigure" Margin="0, 0, 0, -20" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All"/>
 
                 <StackLayout AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Margin="30">
