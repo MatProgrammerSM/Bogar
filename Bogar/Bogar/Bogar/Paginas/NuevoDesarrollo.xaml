@@ -87,7 +87,7 @@
                         <Entry></Entry>
                     </Frame>
 
-                    <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Genera desarrollo" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+                    <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Generar desarrollo" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
                 </StackLayout>
             </ScrollView>
         </AbsoluteLayout>

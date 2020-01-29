@@ -16,5 +16,10 @@ namespace Bogar
         {
             InitializeComponent();
         }
+
+        private void BtnSearch_Clicked(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

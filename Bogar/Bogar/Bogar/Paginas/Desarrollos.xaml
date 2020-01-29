@@ -11,7 +11,7 @@
     </NavigationPage.TitleView>
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="BtnSearch" Icon="search" Text="Search" Clicked="BtnSearch_Activated"/>
+        <ToolbarItem x:Name="BtnSearch" Icon="search" Text="Search" Clicked="BtnSearch_Clicked"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
