@@ -6,7 +6,6 @@
              mc:Ignorable="d"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
              x:Class="Bogar.Registro"
-             xmlns:local="clr-namespace:Bogar.Controls"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <AbsoluteLayout>
@@ -17,9 +16,10 @@
 
                     <controls:CircleImage Source="imageperfil" Aspect="AspectFit" WidthRequest="150" HeightRequest="150" Margin="0,30,0,40" HorizontalOptions="Center" VerticalOptions="Start" BorderColor="White" BorderThickness="2" x:Name="perfil">
                         <controls:CircleImage.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="Tomar_foto_perfil" NumberOfTapsRequired="2" />
+                            <TapGestureRecognizer Tapped="Tomar_foto_perfil" NumberOfTapsRequired="1" />
                         </controls:CircleImage.GestureRecognizers>
                     </controls:CircleImage>
+
                     <Label Text="Nombre Completo" Font="Bold, 18"></Label>
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="3, 5, 3, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9" Margin="0, 0, 0, 15">
                         <Entry Placeholder="Ingrese su Nombre" x:Name="e_nombre"></Entry>
@@ -125,12 +125,11 @@
                         <Picker HorizontalOptions="FillAndExpand" x:Name="p_estudios">
                             <Picker.Items>
                                 <x:String>Elige un número</x:String>
-                                <x:String>Ninguno</x:String>
-                                <x:String>1</x:String>
-                                <x:String>2</x:String>
-                                <x:String>3</x:String>
-                                <x:String>4</x:String>
-                                <x:String>5+</x:String>
+                                <x:String>PRIMARIA</x:String>
+                                <x:String>SECUNDARIA</x:String>
+                                <x:String>PREPARATORIA</x:String>
+                                <x:String>LICENCIATURA</x:String>
+                                <x:String>MAESTRIA Ó SUPERIOR</x:String>
                             </Picker.Items>
                         </Picker>
                     </Frame>
@@ -139,7 +138,7 @@
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="5, 10, 5, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9">
                         <Image Source="image" x:Name="foto_ine" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="Tomar_foto_ine" NumberOfTapsRequired="2" />
+                                <TapGestureRecognizer Tapped="Tomar_foto_ine" NumberOfTapsRequired="1" />
                             </Image.GestureRecognizers>
                         </Image>
                     </Frame>
@@ -148,7 +147,7 @@
                     <Frame BorderColor="#F7F8F9" CornerRadius="5" Padding="5, 10, 5, 5" VerticalOptions="Center" BackgroundColor="#F7F8F9">
                         <Image Source="image" x:Name="foto_comprobante" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" >
                             <Image.GestureRecognizers>
-                                <TapGestureRecognizer Tapped="Tomar_foto_comprobante" NumberOfTapsRequired="2" />
+                                <TapGestureRecognizer Tapped="Tomar_foto_comprobante" NumberOfTapsRequired="1" />
                             </Image.GestureRecognizers>
                         </Image>
                     </Frame>
@@ -163,7 +162,7 @@
                         <Entry Placeholder="Contraseña" BackgroundColor="#F7F8F9"  x:Name="e_contrasena"></Entry>
                     </Frame>
 
-                    <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Continuar" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+                    <Button BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Continuar" TextColor="#FFF" HorizontalOptions="FillAndExpand" Clicked="OnLoginClicked"></Button>
                 </StackLayout>
             </ScrollView>
         </AbsoluteLayout>

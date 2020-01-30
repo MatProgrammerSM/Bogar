@@ -49,7 +49,10 @@ namespace Bogar.Droid
                             Manifest.Permission.AccessCoarseLocation,
                             Manifest.Permission.AccessFineLocation,
                             Manifest.Permission.AccessLocationExtraCommands,
+                            Manifest.Permission.ReadExternalStorage,
+                            Manifest.Permission.WriteExternalStorage,
                             Manifest.Permission.Internet,
+                            Manifest.Permission.Camera,
 
              };
 
