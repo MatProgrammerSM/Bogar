@@ -148,6 +148,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\camera.png" />
     <BundleResource Include="Resources\image.png" />
+    <BundleResource Include="Resources\est1.png" />
+    <BundleResource Include="Resources\est2.png" />
+    <BundleResource Include="Resources\est3.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\check.png" />

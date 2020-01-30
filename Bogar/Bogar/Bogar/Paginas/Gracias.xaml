@@ -5,12 +5,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Bogar.Gracias">
     <StackLayout>
-        <Frame WidthRequest="270" HeightRequest="300" Padding="45" Margin="50">
+        <Frame WidthRequest="270" HeightRequest="400" Padding="35" Margin="40">
             <StackLayout>
-                <Image Source="logo" HeightRequest="80" />
-                <Label Padding="35, 10, 35, 10" Text="Gracias por generar el ticket de Nuevo Desarrollo." HorizontalTextAlignment="Center" Font="Bold, 16" HorizontalOptions="CenterAndExpand" TextColor="#DD463C"></Label>
+                <Image Source="logo" HeightRequest="60" />
+                <Label Padding="15, 10, 15, 10" Text="Gracias por generar el ticket de Nuevo Desarrollo." HorizontalTextAlignment="Center" Font="Bold, 16" HorizontalOptions="CenterAndExpand" TextColor="#DD463C"></Label>
 
-                <Label Padding="35, 10, 35, 10" Font="Normal, 16" LineHeight="1.2" Text="Estamos validando tu información. Nuestros investigadores tendrán un plazo de 24 horas naturales para capturar los datos." HorizontalTextAlignment="Center"/>
+                <Label Padding="15, 10, 15, 10" Font="Normal, 16" LineHeight="1.2" Text="Estamos validando tu información. Nuestros investigadores tendrán un plazo de 24 horas naturales para capturar los datos." HorizontalTextAlignment="Center"/>
 
                 <Button x:Name="BtnSend" Clicked="BtnSend_Clicked" Text="Continuar" BackgroundColor="#FFF" HeightRequest="35" TextColor="#DD463C"></Button>
             </StackLayout>

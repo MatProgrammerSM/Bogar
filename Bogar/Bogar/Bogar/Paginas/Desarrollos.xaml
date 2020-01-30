@@ -5,20 +5,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Bogar.Desarrollos">
-    
-    <NavigationPage.TitleView>
-        <Label Text="BOGAR" Font="Bold, 22" TextColor="#FFF"></Label>
-    </NavigationPage.TitleView>
-
-    <ContentPage.ToolbarItems>
-        <ToolbarItem x:Name="BtnSearch" Icon="search" Text="Search" Clicked="BtnSearch_Clicked"/>
-    </ContentPage.ToolbarItems>
-
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <AbsoluteLayout x:Name="absolutelayout">
+            <StackLayout HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" >
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Spacing="0">
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start" >
+                        <Label Text="Desarrollos apartados" TextColor="#DD463C" FontAttributes="Bold" FontSize="18" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="10,15"></Label>
+                        <BoxView HeightRequest="5" BackgroundColor="#DD463C"></BoxView>
+                    </StackLayout>
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                        <Label Text="Desarrollos completados" TextColor="#B6B3B3" FontAttributes="None" FontSize="18" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="10,15"></Label>
+                        <BoxView HeightRequest="5" BackgroundColor="#B6B3B3"></BoxView>
+                    </StackLayout>
+                </StackLayout>
+                <ScrollView>
+                    <StackLayout x:Name="stackdesarrollos"></StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>
