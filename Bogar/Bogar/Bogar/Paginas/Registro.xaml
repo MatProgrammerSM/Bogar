@@ -46,7 +46,6 @@
                                     <x:String>SEPARADO/A</x:String>
                                     <x:String>DIVORCIADO/A</x:String>
                                     <x:String>VIUDO/A</x:String>
-                                    <x:String>Japanese Macaque</x:String>
                                 </x:Array>
                             </Picker.ItemsSource>
                         </Picker>

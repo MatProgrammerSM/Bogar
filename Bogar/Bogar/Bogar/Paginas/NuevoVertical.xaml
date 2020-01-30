@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Bogar.NuevoVertical">
+
+    <NavigationPage.TitleView>
+        <Label Text="Desarrollo Vertical" Font="Bold, 18" TextColor="#FFF"></Label>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Aspect="AspectFill" BackgroundColor="#FFF" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout HorizontalOptions="Fill" BackgroundColor="#FFF" Padding="40, 30, 40, 80" Spacing="10">
+
+                    
+
+                    <Button x:Name="BtnNuevoDesarrollo" BackgroundColor="#DD463C" CornerRadius="10" BorderColor="#FFF" Text="Generar desarrollo" TextColor="#FFF" HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

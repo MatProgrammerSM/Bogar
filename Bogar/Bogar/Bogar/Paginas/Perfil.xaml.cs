@@ -63,22 +63,30 @@ namespace Bogar
 
         void NuevoDesarrollo(object sender, EventArgs e)
         {
-            ((NavigationPage)this.Parent).PushAsync(new NuevoDesarrollo());
+            try
+            {
+                Navigation.PushAsync(new NuevoDesarrollo());
+            }
+            catch (Exception ex)
+            {
+
+            }
+            
         }
 
         private void ActualizarDesarrollo(object sender, EventArgs e)
         {
-            ((NavigationPage)this.Parent).PushAsync(new NuevoDesarrollo());
+            Navigation.PushAsync(new NuevoDesarrollo());
         }
 
         private void BtnNotificacion_Clicked(object sender, EventArgs e)
         {
-            ((NavigationPage)this.Parent).PushAsync(new Notificaciones());
+            Navigation.PushAsync(new Notificaciones());
         }
 
         private void BtnConfiguracion_Clicked(object sender, EventArgs e)
         {
-            ((NavigationPage)this.Parent).PushAsync(new Configuracion());
+            Navigation.PushAsync(new Configuracion());
         }
 
     }

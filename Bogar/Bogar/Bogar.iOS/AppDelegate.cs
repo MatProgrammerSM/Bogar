@@ -26,6 +26,7 @@ namespace Bogar.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
             ImageCircleRenderer.Init();
+            Xamarin.FormsGoogleMaps.Init("AIzaSyAphxfCDneoZOFBl3hckQISMSzM-74i2lY");
             Rg.Plugins.Popup.Popup.Init();
             return base.FinishedLaunching(app, options);
         }

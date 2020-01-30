@@ -26,6 +26,7 @@ namespace Bogar.Droid
             ImageCircleRenderer.Init();
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
 
@@ -58,7 +59,7 @@ namespace Bogar.Droid
 
         async Task GetPermissionsAsync()
         {
-            const string permission = Manifest.Permission.ReadContacts;
+            const string permission = Manifest.Permission.AccessFineLocation;
 
             if (CheckSelfPermission(permission) == (int)Android.Content.PM.Permission.Granted)
             {
